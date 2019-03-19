@@ -21,7 +21,7 @@ public class MultiController extends MultiActionController {
 
     public ModelAndView Hello(HttpServletRequest httpServletRequest,
                               HttpServletResponse httpServletResponse) throws Exception {
-        ModelAndView modelAndView = new ModelAndView("Hello");
+        ModelAndView modelAndView = new ModelAndView("index");
         return modelAndView;
     }
 }

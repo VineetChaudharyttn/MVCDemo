@@ -16,15 +16,13 @@ public class ControllerAnno {
         return "index string";
     }
     @RequestMapping("/test1")
-    @ResponseBody
     ModelAndView index1(){
-        ModelAndView modelAndView=new ModelAndView("Hello");
+        ModelAndView modelAndView=new ModelAndView("index");
         return modelAndView;
     }
     @RequestMapping("/submit/{id}" )
-    @ResponseBody
     ModelAndView submit(@PathVariable("id") int id, @RequestParam("txt") String txt){
-        ModelAndView modelAndView=new ModelAndView("Hello");
+        ModelAndView modelAndView=new ModelAndView("index");
         modelAndView.addObject("msg",txt);
         modelAndView.addObject("company",id);
         return modelAndView;
